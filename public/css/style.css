@@ -1,0 +1,32 @@
+body{
+	font-family:'Roboto',Sans-serif!important;
+	background: #fff;
+}
+
+nav{
+	background: rgb(68, 134, 244);
+	padding: 10px 0;
+}
+
+.logo{
+	color: #fff;
+	font-weight: bolder;
+	letter-spacing: 1px;
+	margin:0px;
+	font-size: 25px;
+}
+
+.blog-title{
+	font-weight: 600;
+	color: #555;
+}
+
+.paragraph{
+	font-size: 14px;
+	text-align: justify;
+	font-weight: 400;
+	line-height: 27px;
+}
+ .muted{
+   color: #888;
+ }
