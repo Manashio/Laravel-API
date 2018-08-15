@@ -19,6 +19,7 @@ nav{
 .blog-title{
 	font-weight: 600;
 	color: #555;
+	font-size: 30px;
 }
 
 .paragraph{
@@ -29,4 +30,48 @@ nav{
 }
  .muted{
    color: #888;
+   font-weight: 500;
  }
+
+
+.links{
+}
+ .pagination {
+ 	background:#fff;
+	float: right;
+
+ }
+
+ .page-link{
+ 	border: 2px solid #EEE;
+ 	border-radius: 50%;
+ 	background: #eee;
+ 	font-weight: bold;
+ 	margin-left: 20px;
+ }
+.page-item:last-child .page-link{
+	border-radius: 5px;
+ 	background: #fff;
+ 	font-weight: bold;
+ 	margin-left: 20px;
+ 	color: transparent;
+ 	border: 2px solid #fff;
+}
+.page-item:last-child .page-link::after{
+	content: 'Next';
+	color: rgb(68, 134, 244);
+	margin-right: 6px; 
+}
+
+ .page-item:first-child .page-link {
+    display: none;
+    margin: 0px;
+}
+ .page-link:hover{
+ 	background: rgb(68, 134, 244);
+ 	border: 2px solid rgb(68, 134, 244);
+ 	color: #fff;
+ }
+  li.disabled{
+ 	display: none;
+ } 

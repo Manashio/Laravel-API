@@ -14,7 +14,7 @@ class PostsController extends Controller
      */
     public function index()
     {
-        $blogs = Post::orderBy('created_at', 'desc')->paginate(2);
+        $blogs = Post::orderBy('created_at', 'desc')->paginate(3);
         return view('blog.index')->with('blogs', $blogs);
     }
 
@@ -47,7 +47,9 @@ class PostsController extends Controller
      */
     public function show($id)
     {
-        //
+        $blog = Post::find($id);
+        $total_blog = Post::count();
+        return view('blog.show',['counter' => '1'],compact('total_blog'))->with('blog', $blog);
     }
 
     /**
