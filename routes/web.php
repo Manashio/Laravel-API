@@ -1,5 +1,7 @@
 <?php
 
+use App\Post;
+use App\Http\Resources\Post as PostResource;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -10,6 +12,12 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get('/api/blogs', function () {
+    return PostResource::collection(Post::all());
+    // return new PostResource(Post::find(1));
+});
+
 
 Route::get('/', function () {
     return view('index');

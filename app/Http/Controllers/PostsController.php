@@ -48,8 +48,7 @@ class PostsController extends Controller
     public function show($id)
     {
         $blog = Post::find($id);
-        $total_blog = Post::count();
-        return view('blog.show',['counter' => '1'],compact('total_blog'))->with('blog', $blog);
+        return view('blog.show')->with('blog', $blog);
     }
 
     /**

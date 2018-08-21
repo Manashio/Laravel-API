@@ -17,15 +17,8 @@
 
                     <div class="text-center">
                         <a href="/blogs" class="btn btn-primary">Close</a>
-                        @if(count($total_blog) == $counter)
-                            <a href="{{$blog->id+$counter}}" class="btn btn-primary">Next Post</a>
-                        @endif
-
-
                     </div>
                 </div>
-          
-          
 
         </div>
     </div>
