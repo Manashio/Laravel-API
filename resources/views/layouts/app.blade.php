@@ -26,16 +26,15 @@
     <div id="app">
 
         <nav>
-
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-10">
-                         <p class="logo">blog.io</p>
+                         <p class="logo">Laravel</p>
                     </div>
                 </div>
             </div>
-
         </nav>
+
 
         <main class="py-4">
             @yield('content')

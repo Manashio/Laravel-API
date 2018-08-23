@@ -15,7 +15,7 @@
                    <p class="paragraph pt-3"> {{$blog -> post_body}}</p>
                     
                     <div class="pb-3">
-                        <p class="muted"> {{date('h:i a, d M, y', strtotime($blog->created_at))}}</p>            
+                        <p class="muted"> {{date('d M, h:ia ', strtotime($blog->created_at))}}</p>            
                     </div>
                 
                 </div>

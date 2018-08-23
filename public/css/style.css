@@ -4,16 +4,31 @@ body{
 }
 
 nav{
-	background: rgb(68, 134, 244);
-	padding: 10px 0;
+	background: #4493F4;
+	padding: 30px 0;
+}
+.btn{
+	border-radius: 50px;
+	padding: 10px 30px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+.primary{
+	border: 2px solid #4493F4;
+	background:#fff;
+	color:#4493F4;
+}
+.primary:hover{
+	background: #4493F4;
+	color: #ffffff;
 }
 
 .logo{
 	color: #fff;
-	font-weight: bolder;
+	font-weight: 500;
 	letter-spacing: 1px;
 	margin:0px;
-	font-size: 25px;
+	font-size: 20px;
 }
 
 .blog-title{

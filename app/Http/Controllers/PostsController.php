@@ -25,7 +25,7 @@ class PostsController extends Controller
      */
     public function create()
     {
-        //
+         return view('blog.add');
     }
 
     /**
@@ -36,7 +36,17 @@ class PostsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'post_title' => 'required|string',
+            'post_author' =>'required|string',
+            'post_body' => 'required|string',
+        ]);
+        $blog = new Post;
+        $blog->post_title = $request->input('post_title');
+        $blog->post_author = $request->input('post_author');
+        $blog->post_body = $request->input('post_body');
+        $blog->save();
+        return redirect('/blogs')->with('success', 'Your post has been posted!');
     }
 
     /**

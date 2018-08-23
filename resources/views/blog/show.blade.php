@@ -12,11 +12,11 @@
                    <p class="paragraph pt-3"> {{$blog -> post_body}}</p>
                     
                     <div class="pb-3">
-                        <p class="muted"> {{date('h:i a, d M, y', strtotime($blog->created_at))}}</p>            
+                        <p class="muted">Posted on <br> {{date('h:i a, d M, Y', strtotime($blog->created_at))}}</p>            
                     </div>
 
-                    <div class="text-center">
-                        <a href="/blogs" class="btn btn-primary">Close</a>
+                    <div class="pt-5">
+                        <a href="/blogs" class="btn primary">Close</a>
                     </div>
                 </div>
 

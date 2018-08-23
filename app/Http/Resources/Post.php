@@ -18,11 +18,12 @@ class Post extends JsonResource
             'id' => $this->id,
             'title' => $this->post_title,
             'content' => $this->post_body,
+            'author' => $this->post_author,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
 
             'links' => [
-                'source' => 'blog.io',
+                'source' => 'http://127.0.0.1:8000/blogs/'.$this->id,
             ],
         ];
     }
